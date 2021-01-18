@@ -39,3 +39,21 @@ if (playerInput == '1') {
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if (computerMove == playerMove) {
+  printMessage('Remis!');
+} else if (computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz!');
+} else if (computerMove == 'papier' && playerMove == 'nożyce'){
+  printMessage('Ty wygrywasz!');
+} else if (playerMove == 'kamień' && computerMove == 'papier'){
+  printMessage('Komputer wygrywa!');
+} else if (playerMove == 'nożyce' && computerMove == 'kamień'){
+  printMessage('Komputer wygrywa!');
+} else if (playerMove == 'papier' && computerMove == 'nożyce'){
+  printMessage('Komputer wygrywa!');
+} else if (playerMove = 'nieznany') {
+  printMessage('Podałeś nieprawidłową cyfrę! Tylko 1, 2 lub 3.');
+}
