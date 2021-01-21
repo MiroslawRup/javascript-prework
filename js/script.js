@@ -1,3 +1,4 @@
+{
 function playGame(playerInput){
 
 	clearMessages();
@@ -14,7 +15,7 @@ function playGame(playerInput){
 
 	let randomNumber = Math.floor(Math.random() * 3 + 1);
 	let computerMove = getMoveName(randomNumber);
-	printMessage('Mój ruch to: ' + computerMove);
+	printMessage('Ruch komputera to: ' + computerMove);
 
 	let playerMove = getMoveName(playerInput);
 	printMessage('Twój ruch to: ' + playerMove);
@@ -49,3 +50,4 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
+}
